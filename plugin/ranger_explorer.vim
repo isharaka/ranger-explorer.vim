@@ -21,10 +21,10 @@ command! RangerOpenCurrentDir
 command! RangerOpenProjectRootDir
 \    call ranger_explorer#open_project_root_dir()
 
-augroup open_with_ranger
-  autocmd!
-  autocmd BufEnter * silent call ranger_explorer#open_with_edit(expand("<amatch>"))
-augroup END
+" augroup open_with_ranger
+"   autocmd!
+"   autocmd BufEnter * silent call ranger_explorer#open_with_edit(expand("<amatch>"))
+" augroup END
 
 
 let &cpoptions = s:save_cpoptions
